@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Pamploni\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Pamploni\\.nuget\\packages"
+    ]
+  }
+}
