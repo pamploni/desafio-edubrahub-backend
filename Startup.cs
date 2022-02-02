@@ -58,6 +58,76 @@ namespace DesafioApiRest
             {
                 endpoints.MapControllers();
             });
+
+            var scope = app.ApplicationServices.CreateScope();
+            var context = scope.ServiceProvider.GetService<ApiContext>();
+            SeedData(context);
+        }
+
+        public static void SeedData(ApiContext context)
+        {
+            Produto prd1 = new Produto
+            {
+                Id = 1,
+                Nome = "Achocolatado Nescau",
+                Codigo_barras = "7891000338087",
+                Preco = 18.60M
+            };
+
+            Produto prd2 = new Produto
+            {
+                Id = 2,
+                Nome = "Leite em Po Nestle",
+                Codigo_barras = "7891000259047",
+                Preco = 16.40M
+            };
+
+
+
+            context.Produtos.Add(prd1);
+            context.Produtos.Add(prd2);
+
+            //adicionar Loja
+
+            Loja lj1 = new Loja
+            {
+                Id = 1,
+                Nome = "Supermercado Menor Preco",
+                Razao = "Com. Var. Alimentos Ltda",
+                Cnpj = "111.111.111/0001-11",
+                Endereco = "Rua de Teste",
+                Numero = "999",
+                Bairro = "Novo Teste",
+                Cep = "22333-444",
+                Cidade = "Cidade Grande",
+                Uf = "PB"
+            };
+
+            context.Lojas.Add(lj1);
+
+
+            //adicionar um estoque inicial para cada produto
+            Estoque est1 = new Estoque
+            {
+                Id = 11,
+                produto_id = 1,
+                loja_id = 1,
+                quantidade = 10M
+            };
+
+            Estoque est2 = new Estoque
+            {
+                Id = 12,
+                produto_id = 2,
+                loja_id = 1,
+                quantidade = 12M
+            };
+
+            context.Estoques.Add(est1);
+            context.Estoques.Add(est2);
+
+
+            context.SaveChanges();
         }
     }
 }
