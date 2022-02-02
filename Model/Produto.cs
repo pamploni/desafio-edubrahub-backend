@@ -12,5 +12,8 @@ namespace DesafioApiRest.Model
         public string Codigo_barras { get; set; }
         public decimal Preco { get; set; }
 
+        public List<Estoque> Estoques { get; set; }
+        public ICollection<Loja> Lojas { get; set; }
+
     }
 }

@@ -1,10 +1,3 @@
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.csprojAssemblyReference.cache
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.AssemblyInfoInputs.cache
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.AssemblyInfo.cs
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.csproj.CoreCompileInputs.cache
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.MvcApplicationPartsAssemblyInfo.cs
-C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\appsettings.Development.json
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\appsettings.json
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\DesafioApiRest.exe
@@ -26,6 +19,12 @@ C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagg
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Projetos\Desafio\DesafioApiRest\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.AssemblyInfoInputs.cache
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.AssemblyInfo.cs
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.csproj.CoreCompileInputs.cache
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\staticwebassets\DesafioApiRest.StaticWebAssets.Manifest.cache
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\staticwebassets\DesafioApiRest.StaticWebAssets.xml
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\scopedcss\bundle\DesafioApiRest.styles.css
@@ -35,3 +34,4 @@ C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.dll
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\ref\DesafioApiRest.dll
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.pdb
 C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.genruntimeconfig.cache
+C:\Projetos\Desafio\DesafioApiRest\obj\Debug\net5.0\DesafioApiRest.csprojAssemblyReference.cache

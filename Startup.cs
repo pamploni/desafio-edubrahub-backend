@@ -34,7 +34,7 @@ namespace DesafioApiRest
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DesafioApiRest", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Desafio Api Rest", Version = "v1" });
             });
         }
 
@@ -45,7 +45,7 @@ namespace DesafioApiRest
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DesafioApiRest v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Desafio Api Rest v1"));
             }
 
             app.UseHttpsRedirection();
@@ -84,8 +84,7 @@ namespace DesafioApiRest
 
 
 
-            context.Produtos.Add(prd1);
-            context.Produtos.Add(prd2);
+            context.Produtos.AddRange(prd1,prd2);
 
             //adicionar Loja
 
@@ -112,7 +111,8 @@ namespace DesafioApiRest
                 Id = 11,
                 produto_id = 1,
                 loja_id = 1,
-                quantidade = 10M
+                quantidade = 10M,
+                DataRegistro =  DateTime.Now
             };
 
             Estoque est2 = new Estoque
@@ -120,11 +120,11 @@ namespace DesafioApiRest
                 Id = 12,
                 produto_id = 2,
                 loja_id = 1,
-                quantidade = 12M
+                quantidade = 12M,
+                DataRegistro = DateTime.Now
             };
 
-            context.Estoques.Add(est1);
-            context.Estoques.Add(est2);
+            context.Estoques.AddRange(est1, est2);
 
 
             context.SaveChanges();

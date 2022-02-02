@@ -47,10 +47,37 @@ namespace DesafioApiRest.Controllers
             return Ok("Estoque excluido com sucesso");
         }
 
-        [HttpPost]
+        [HttpPost("addStock")]
         public IActionResult AddStock(Estoque estoque)
         {
-            _context.Estoques.Add(estoque);
+            //verificar se existe o item no estoque da loja
+            var estoqueCheck = _context.Estoques.SingleOrDefault(est => (est.loja_id == estoque.loja_id) && (est.produto_id == estoque.produto_id));
+
+            if (estoqueCheck == null)
+            {
+                return NotFound("O Estoque nao existe");
+            }
+
+            estoqueCheck.quantidade += estoque.quantidade;
+            _context.Update(estoqueCheck);
+            _context.SaveChanges();
+
+            return Created("api/estoque/" + estoque.Id, estoque);
+        }
+
+        [HttpPost("removeStock")]
+        public IActionResult RemoveStock(Estoque estoque)
+        {
+            //verificar se existe o item no estoque da loja
+            var estoqueCheck = _context.Estoques.SingleOrDefault(est => est.Id == estoque.Id && est.loja_id == estoque.loja_id);
+
+            if (estoqueCheck == null)
+            {
+                return NotFound("O Estoque nao existe");
+            }
+
+            estoqueCheck.quantidade = estoqueCheck.quantidade - estoque.quantidade;
+            _context.Update(estoqueCheck);
             _context.SaveChanges();
 
             return Created("api/estoque/" + estoque.Id, estoque);
@@ -67,6 +94,8 @@ namespace DesafioApiRest.Controllers
 
             estoqueCheck.produto_id = estoque.produto_id;
             estoqueCheck.loja_id = estoque.loja_id;
+            estoqueCheck.quantidade = estoque.quantidade;
+            estoqueCheck.DataRegistro = DateTime.Now;
            
 
             _context.Update(estoqueCheck);

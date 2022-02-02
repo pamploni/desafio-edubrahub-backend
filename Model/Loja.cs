@@ -18,6 +18,10 @@ namespace DesafioApiRest.Model
         public string Cidade { get; set; }
         public string Uf { get; set; }
         public string Cep { get; set; }
-        
+
+        public ICollection<Produto> Produtos { get; set; }
+
+        public List<Estoque> Estoques { get; set; }
+
     }
 }
